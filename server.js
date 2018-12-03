@@ -47,3 +47,33 @@ app.get("/cats", function (request, response){
 app.get("/cars", function (request, response){
     response.render('cars');
 })
+
+app.get("/eggo", function (request, response){
+    // hard-coded user data
+    var cat_details = {
+        name: "Eggo",
+        age: "99",
+        spots: "Beach"
+    };
+    response.render('eggo', {cat: cat_details});
+})
+
+app.get("/michael", function (request, response){
+    // hard-coded user data
+    var cat_details = {
+        name: "Michael",
+        age: "Three",
+        spots: "Bottomless pit of despair"
+    };
+    response.render('michael', {cat: cat_details});
+})
+
+app.get("/slh", function (request, response){
+    // hard-coded user data
+    var cat_details = {
+        name: "Satan's little Helper",
+        age: "6 months",
+        spots: "Your bed"
+    };
+    response.render('slh', {cat: cat_details});
+})
